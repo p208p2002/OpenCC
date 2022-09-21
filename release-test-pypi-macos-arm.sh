@@ -12,7 +12,7 @@ bash ${MINICONDA_FILENAME} -b -f -p $HOME/miniconda3
 export PATH=$HOME/miniconda3/bin:$PATH
 eval "$(conda shell.bash hook)"
 
-for VERSION in 3.7 3.8 3.9 3.10; do
+for VERSION in 3.8 3.9 3.10; do
     # Create and activate environment
     CONDA_SUBDIR=osx-arm64 conda create -y -n py$VERSION python=$VERSION
     conda activate py$VERSION
