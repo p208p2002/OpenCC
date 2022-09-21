@@ -14,7 +14,7 @@ eval "$(conda shell.bash hook)"
 
 for VERSION in 3.7 3.8 3.9 3.10; do
     # Create and activate environment
-    conda create -y -n py$VERSION python=$VERSION
+    CONDA_SUBDIR=osx-arm64 conda create -y -n py$VERSION python=$VERSION
     conda activate py$VERSION
 
     # Build and package
