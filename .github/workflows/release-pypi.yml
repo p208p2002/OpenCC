@@ -20,6 +20,7 @@ jobs:
           -e TWINE_USERNAME=__token__ \
           -e TWINE_PASSWORD=${{ secrets.PYPI_TOKEN }} \
           ubuntu:18.04 /bin/bash /opt/OpenCC/release-pypi-linux.sh
+        bash release-pypi-linux-arm.sh
 
     - name: Build package and upload (macOS)
       if: runner.os == 'macOS'
