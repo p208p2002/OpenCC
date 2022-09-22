@@ -12,7 +12,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v1
     - name: Build package and upload from docker (Linux)
       if: runner.os == 'Linux'
       run: bash release-pypi-linux-arm.sh
