@@ -8,4 +8,4 @@ done
 
 # Upload to PyPI
 python3 -m pip install twine
-python3 -m twine upload dist/*
+python3 -m twine upload --repository testpypi dist/*
