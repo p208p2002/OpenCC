@@ -15,5 +15,4 @@ jobs:
 
     - name: Build package and upload from docker (Linux)
       if: runner.os == 'Linux'
-      run: |
-        bash release-pypi-linux-arm.sh
+      run: bash release-pypi-linux-arm.sh
